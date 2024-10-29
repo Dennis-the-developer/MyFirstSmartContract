@@ -17,6 +17,62 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "favoriteNumbers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "people",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "state",
+				"outputs": [
+					{
+						"internalType": "enum SimpleStorage.ContractState",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -47,11 +103,11 @@
 	},
 	"sources": {
 		"SimpleStorage.sol": {
-			"keccak256": "0xcfb5a258c0f4b9f38aabac2ede7eefd90a737558cfb66430123561fc8bb450bb",
+			"keccak256": "0x39d6d4d4bc999bd3e45a61a792cdae4ed706146a8a38746cc06c02557be02a16",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cdfc77b1509c927352cc89e4f5ca64c153f77fa2cdd08ab9e334054da5878939",
-				"dweb:/ipfs/QmaFQGGJBE3RurEXBjyq8JdQ1jX5VJjQWojo4dxTLyrrze"
+				"bzz-raw://53fadb3b72e2e3c5911ac838db136b6ea63dd1d074b5c0c9155bb058d99ae15d",
+				"dweb:/ipfs/QmVuV9Gwp9kLVZgGStWrxVrUReveu7Md5K4T4etUncUNHg"
 			]
 		}
 	},
