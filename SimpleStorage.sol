@@ -46,4 +46,23 @@ contract SimpleStorage {
         }
         return sum;
     }
+
+    string internal AnInternalVariable = "Holds some string";
+
+    function internalFunction() internal view returns (string memory) {
+        return AnInternalVariable;
+    }
+
+    function callInternalFunction() internal view returns (string memory) {
+        return internalFunction();
+    }
+
+    function externalFunction() external pure returns (string memory) {
+        return "This is an external function";
+    }
+
+    function testExternalFunction() public view returns(string memory) {
+        return this.externalFunction();
+    }
+    
 }
