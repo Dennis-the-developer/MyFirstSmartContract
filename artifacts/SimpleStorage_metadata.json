@@ -7,6 +7,51 @@
 		"abi": [
 			{
 				"inputs": [],
+				"name": "activateContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "userFavoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "addFavoriteNumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deactivateContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "externalFunction",
 				"outputs": [
 					{
@@ -45,6 +90,19 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isActive",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -174,11 +232,11 @@
 	},
 	"sources": {
 		"SimpleStorage.sol": {
-			"keccak256": "0x84e8e65fd2919d058ce9232a5ce8b6a4dfa3ee0f47f449373cfece314b60e828",
+			"keccak256": "0x345945ca50ee872459d466de3c623c6ea0f4913277c867bda770600b61d09369",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://96a1201eb9e28d2d35c1799dabb43ea65550ef97c28b448534ebf1dcdd72d93d",
-				"dweb:/ipfs/QmezF5yShJB4M4PM8AHHuEtotsr1YWFdRhDdu2Xq5XywmD"
+				"bzz-raw://4e7100132d9777a91c2267c3cce48a5b4358fca4f15ece8d433c0d9fbc92a0e5",
+				"dweb:/ipfs/QmSJ1VwaeAK6yLS5Gna2xJgQph9wFqbN1o6EXNsdLaUio6"
 			]
 		}
 	},

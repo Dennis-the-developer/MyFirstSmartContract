@@ -57,12 +57,40 @@ contract SimpleStorage {
         return internalFunction();
     }
 
+    // external function
     function externalFunction() external pure returns (string memory) {
         return "This is an external function";
     }
 
+    // test external function
     function testExternalFunction() public view returns(string memory) {
         return this.externalFunction();
     }
+
+    // addFavoriteNumber function
+    function addFavoriteNumber(uint userFavoriteNumber) public {
+        favoriteNumbers.push(userFavoriteNumber);
+    }
     
+    // Add Person function
+   function addPerson(string memory _name, uint _favoriteNumber) public {
+        people.push(Person(_name, _favoriteNumber));
+   }
+
+    // Change the contract state to active
+   function activateContract() public {
+        state = ContractState.Active;
+   }
+
+    // Change the contract state to active
+   function deactivateContract() public {
+        state = ContractState.Inactive;
+   }
+
+    // Checks whether the contract state is currently active
+    function isActive() public view returns (bool) {
+        bool isActiveState = (state == ContractState.Active);
+            return isActiveState;
+    }
+
 }
