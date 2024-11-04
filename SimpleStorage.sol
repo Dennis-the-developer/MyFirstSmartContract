@@ -103,8 +103,16 @@ contract SimpleStorage {
             return isActiveState;
     }
 
-   
+    // This function uses memory variable to make calculations
+    function addNunbers(uint256 _num1, uint256 _num2) public pure returns (uint256) {
+        uint256 newNumber = _num1 + _num2;
+        return newNumber;
+    }
 
-
+    // Function that takes a calldata string parameter and processes it without modifying the input
+    function greetings(string calldata _name) public pure returns (string memory) {
+        string memory greet = string(abi.encodePacked("Hello", _name));
+        return greet;
+    }
 
 }
