@@ -23,6 +23,9 @@ contract SimpleStorage {
 
     ContractState public state; // State variable to store the current contract state
 
+     // Mapping name to user favorite number
+    mapping(string => uint256) public nameToFavoriteNumber;
+
     function storeNumber(uint256 number) public {
         favoriteNumber = number;
     } 
@@ -74,7 +77,8 @@ contract SimpleStorage {
     
     // Add Person function
    function addPerson(string memory _name, uint _favoriteNumber) public {
-        people.push(Person(_name, _favoriteNumber));
+        // people.push(Person(_name, _favoriteNumber));
+        nameToFavoriteNumber[_name] = _favoriteNumber;
    }
 
     // Change the contract state to active
@@ -92,5 +96,9 @@ contract SimpleStorage {
         bool isActiveState = (state == ContractState.Active);
             return isActiveState;
     }
+
+   
+
+
 
 }
