@@ -6,6 +6,19 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "NumberUpdated",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "activateContract",
 				"outputs": [],
@@ -251,11 +264,11 @@
 	},
 	"sources": {
 		"SimpleStorage.sol": {
-			"keccak256": "0x7fe77d35c20e177599f25a8a68425467222c2c7cfffde6a96e541589004bf308",
+			"keccak256": "0xdcd4895162586035e5a1c4da77e25e1cd443daa01f817c87d2c943737c1d9364",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c9b6b78dcc098ed6158d3f60e0c230db78b0d97c201ea69af481f002bbd40f27",
-				"dweb:/ipfs/QmS39bDwEm3XHNRh2XxPwErV7crCoRdqdwpabrAUqXEZMV"
+				"bzz-raw://cff56c7396907cb898ee8638fddfffc513ea9b61eee75e32f085bc2946fc3f64",
+				"dweb:/ipfs/QmfVzjGELNLTNv1hYQJs63gJ1Pm7i1QTvJnPtE4cJP1r3k"
 			]
 		}
 	},

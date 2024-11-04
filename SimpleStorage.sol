@@ -26,8 +26,14 @@ contract SimpleStorage {
      // Mapping name to user favorite number
     mapping(string => uint256) public nameToFavoriteNumber;
 
+    // Create event called NumberUpdated
+    event NumberUpdated(uint256 newNumber);
+
     function storeNumber(uint256 number) public {
         favoriteNumber = number;
+
+        // Emit NumberUpdated event
+        emit NumberUpdated(favoriteNumber);
     } 
 
     function getFavoriteNumber() public view returns (uint256) {
